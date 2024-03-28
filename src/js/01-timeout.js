@@ -1,4 +1,4 @@
-import '../css/common.css';
+// import '../css/common.css';
 
 /*
  * Метод window.setTimeout(callback, delay, args)
@@ -20,17 +20,32 @@ import '../css/common.css';
  * Очистка таймаута с clearTimeout(timeoutId)
  */
 
+// const logger = time => {
+//   console.log(`Лог через ${time}ms, потому что не отменили таймаут`);
+// };
+
+// const timerId = setTimeout(logger, 2000, 2000);
+
+// console.log(timerId);
+
+// const shouldCancelTimer = Math.random() > 0.3;
+// console.log(shouldCancelTimer);
+
+// if (shouldCancelTimer) {
+//   clearTimeout(timerId);
+// }
+
 const logger = time => {
-  console.log(`Лог через ${time}ms, потому что не отменили таймаут`);
+  console.log('Лог через ${time}ms, потому что не отменили таймаут');
 };
 
-const timerId = setTimeout(logger, 2000, 2000);
-
-console.log(timerId);
+// const timeId = setTimeout(logger, 2000, 2000);
+console.log(setTimeout(logger, 2000, 2000));
+// повертає індетифікатор
 
 const shouldCancelTimer = Math.random() > 0.3;
 console.log(shouldCancelTimer);
 
 if (shouldCancelTimer) {
-  clearTimeout(timerId);
+  clearTimeout(timeId);
 }
