@@ -1,4 +1,4 @@
-// import '../css/common.css'
+// import '../css/common.css';
 
 /**
  * - Показываем и скрываем добавляя/удаляя класс is-visible
@@ -6,6 +6,8 @@
  * - Скрываем при клике
  * - Не забываем чистить таймер
  */
+// Todo 14
+//  !Оповещение
 
 const NOTIFICATION_DELAY = 3000;
 let timeoutId = null;
